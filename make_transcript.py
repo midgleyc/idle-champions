@@ -42,10 +42,11 @@ class Transcript:
 | style="text-align: left;" colspan=2|[[SOMETHING/Transcript|Previous: SOMETHING]]
 | style="text-align: right;" colspan=2|[[SOMETHING_ELSE/Transcript|Next: SOMETHING_ELSE]]
 |}}
-
+<noinclude>
 [[Category:{self.name}]]
 [[Category:Transcript]]
 [[Category:{self.campaign}]]
+</noinclude>
 ''')
     return '\n'.join(s)
   def graphic_ids(self):
