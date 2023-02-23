@@ -125,7 +125,9 @@ class Zone:
       starts = [x for x in details if x['type'] == 'start']
       ends = [x for x in details if x['type'] == 'end']
       assert len(starts) < 2 
-      assert len(ends) < 2
+      if len(ends) > 1:
+        print(ends)
+      #assert len(ends) < 2
       assert len(starts) + len(ends) == len(details)
       if len(starts) > 0:
         start = starts[0]

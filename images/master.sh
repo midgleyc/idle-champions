@@ -3,7 +3,7 @@ if [ $# -eq 0 ]; then
   exit 1
 fi
 
-url=$(< $FULLJS jq -r '.graphic_defines | map(select(.id == '"$*"')) | .[0] | "https://ps6.idlechampions.com/~idledragons/mobile_assets/\(.graphic)"')
+url=$(< $FULLJS jq -r '.graphic_defines | map(select(.id == '"$*"')) | .[0] | "https://ps20.idlechampions.com/~idledragons/mobile_assets/\(.graphic)"')
 filename="$(basename "$url").png"
 
 wget "$url" -O "$filename"
